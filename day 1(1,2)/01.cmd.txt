@@ -1,0 +1,6 @@
+            some of the python command used in cmd
+
+cd   -->to change directory
+cd ..  -->to go backward of directory
+python -->to open python
+quit -->to quit python terminal

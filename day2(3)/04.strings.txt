@@ -1,0 +1,85 @@
+=>string:
+variable="value"          =>eg:a="5";    note:both singl and double quote can b used "" or ''
+
+
+
+=>txt decors in python
+
+\n         =>break line          eg:hello\nworld         output:hello
+                                                                world
+
+\t        =>give spaces          eg:hello\tworld        output:hello     world
+
+
+
+
+=>index start from in string 
+eg:         a= h  e  l  l  o
+index:         0  1  2  3  4
+reverse index: 0 -4 -3 -2 -1
+ascessing index: variable[index]         eg:a[1]  =>output:'e'
+
+
+
+string functions:
+len(variable)             =>find length of string                   eg:len("hello")    output:5
+variable[start:end:step]  =>to slice string                        proprties: start=>starting from that element(contains that element)    eg:a="hello"
+                                                                                                                                          a[1:]=>ello =>start from index 1
+                                                                    end=>end before that elment(doesnt contain element)                   eg:a="hello"
+                                                                                                                                          a[:1]=>h   =>doesnt contain index 1 element e
+
+                                                                    step:jumping an element                                               eg:a="hello"
+                                                                                                                                          a[::2]=>hlo =>jump variable
+
+
+
+                                                                    note:- in step will do rverse string                                  eg:a="hello"
+                                                                                                                                          a[::-1]=>olleh =>reverse step
+
+
+syntax=string.replace("string","string thet need to replace")                            
+txt = "one one was a race horse, two two was one too."                output:output=three three was a race horse, two two was three too
+x = txt.replace("one", "three")
+print(x)
+
+
+
+immutability
+string is immutability in python .it is not like c                eg:name="nirajan"
+                                                                      name[0]=k                   expected output=kirajan                   output=error[AS is it immutability]
+                                                                   do this(slicing):
+                                                                       name="k"+name[1:]           output:kirajan
+
+concatination on python
+
+variable+variable                                              =>+ sign is used to concat two string                                          eg:fname="nirajan"
+                                                                                                                                               lname="khatiwada"
+                                                                                                                                               print(fname+lname)  output=>nirajankhatiwada
+variable*number                                               =>concat same string muntiple times                                             eg:fname="nirajan"
+                                                                                               
+                                                                                                                                                 print(fname*3)   outpiut=>nirajannirajannirajan
+
+
+some built in function in python
+variable.upper()                                           =>to capatilaze text                                                                   eg:a="hello"; a.upper(); output=HELLO
+variable.lower()                                           =>to lowercase                                                                         eg:same like ucase but convert to lcase
+variable.split('condition')                                =>to make list of split                                                                eg:a="hello world"         a.split(" ")  output=>['hello','world'] 
+variable.capitalize()                                      =>to capitalize the word
+                                                                eg:a="hello" a.capitalize() output:Hello
+variable.count(string)                                      ==>to count no of string
+                                                            eg:a="hell" print(a.count('l'))  output:2
+variable.find(string)                                     ==>to find index of string
+
+
+
+
+
+printing format in python(f-string)
+for string:
+variable=f'text {variable} text {variable ....}'          =>to format string                                                                   eg:
+                                                                                                                                                name="nirajan"        clas="bachlor"  age="18"         final=f'{name} who read in {clas} is {age} year old'   print(final)       output:nirajan who read in bachlor is 18 year old
+
+
+
+             
+

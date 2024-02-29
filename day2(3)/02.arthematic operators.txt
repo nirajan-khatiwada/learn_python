@@ -1,0 +1,12 @@
+add +
+sub -
+mul *
+divide /
+modulo/mod %
+power **               eg:2**3 => 2^3
+brackt        ()       eg:2*(3+4) =>2*7
+
+
+note:python is dinamically types  which means a variable data types can be changed
+eg: nirajan=2;          =>here nirajan variable is int data type
+    nirajan=[1,2,3,4]   =>here nirajan variable data type is different

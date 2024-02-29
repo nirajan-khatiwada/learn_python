@@ -1,0 +1,5 @@
+numbers:
+variable=value             =>eg:a=5;
+
+python inbuilt function
+type()                       =>used to find data type of variable eg:type(a)          =>output=<class 'int'>

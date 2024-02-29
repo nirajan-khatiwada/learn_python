@@ -1,0 +1,72 @@
+Decorator Basics:
+we use it  to add additional function/attributes to existing function
+for example we have a function that need to be called after auth then we use decorator
+def My_decorator(func):
+    def Updator(a, b):
+        //auth code
+        //callfunction
+    return Updator
+
+@My_decorator
+def divide(a, b):
+    //code
+
+print(divide(1, 0))
+
+
+
+Decorators in Python take a function as an argument.
+The @ symbol is used to apply a decorator to a function.
+
+Decorator Structure:
+A decorator is itself a function.
+Inside the decorator function, there's another function (commonly named wrapper or similar) that usually calls the original function.
+Example:
+def My_decorator(func):
+    def Updator(a, b):
+        if b == 0:
+            print(f'{b} can\'t be zero; it\'s undefined')
+            return 0
+        else:
+            return func(a, b)
+    return Updator
+
+@My_decorator
+def divide(a, b):
+    return a / b
+
+print(divide(1, 0))
+print(divide(0, 1))
+
+
+
+its alternative
+
+
+def My_decorator(func):
+    def Updator(a, b):
+        if b == 0:
+            print(f'{b} can\'t be zero; it\'s undefined')
+            return 0
+        else:
+            return func(a, b)
+    return Updator
+
+def divide(a, b):
+    return a / b
+
+print(My_decorator(divide(1, 0)))
+print(My_decorator(divide(0, 1)))
+
+
+
+
+
+
+
+
+
+In this example, My_decorator is a decorator function.
+It takes a function (divide) as an argument.
+Inside My_decorator, there's Updator that checks for a specific condition before calling the original function.
+This should help you remember the key points about decorators!

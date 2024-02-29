@@ -1,0 +1,47 @@
+syntax:
+for VARIABLENAME in LIST/TUPLES/SET:
+       code inside it
+
+
+eg:
+                                          
+=>to print even items of LIST 
+mylist=[1,2,10,3,4,5,6,7,8,9]  
+for numbers in mylist:
+    if (numbers%2==0):
+        print(numbers)
+
+=>whats aboud nested list
+mylist=[[1,2],[10,3]]        output:[1, 2]
+for numbers in mylist:              [10, 3]
+        print(numbers)
+
+
+=>ascessing items of nested list
+mylist=[[1,2],[10,3]]                         output:1 2
+for numbers in mylist:                               10 3
+        print(numbers[0],numbers[1])
+
+
+=>for loop  in string
+f_name="nirajan"            output:print character
+for char in f_name:
+    print(char)
+
+
+=>TUPLES UNPACKING(nested tuples can be illetrated easily)
+eg:my_List=[(1,2),(3,4)]                     output:1 
+for (a,b) in my_List:                               3
+    print(a)
+
+    a contains first value where b contain second vbalue of tuples as only first value of all the tuples is printed so output is 1,3
+
+
+=>Uses in dictonary
+my_dist={'name':'nirajan','class':'12'}
+my_data=my_dist.items()
+for (keys,values) in my_data:
+       print(f'{keys}:{values}')
+       
+
+

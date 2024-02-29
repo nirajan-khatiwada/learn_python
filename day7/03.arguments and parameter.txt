@@ -1,0 +1,59 @@
+how to pass muntiple arguments in python
+
+=>option 1 
+def sum(a,b,c=0,d=0,e=0):                             here a and b is compultory parameter where c,d,e is optional whose default value is 0 unit the argument is not passed
+    return a+b+c+d+e;
+print(sum(1,2))
+print(sum(1,2,3,4,5))
+
+
+
+
+=>option 2                                            here a will be the tuples of all the argument elements
+def data(*a):                                         output:(1, 2, 3) 6
+    print(a)
+    sum=0
+    for x in a:
+        sum=sum+x
+    return sum
+print(data(1,2,3))
+
+
+
+option 3:                                          here numbers is distionary 
+def sum(**numbers):
+    key=numbers.keys()                             output:{'number1': 1, 'number2': 3}
+4
+    sum=0
+    print(numbers)
+    for x in key:
+        sum=sum+numbers[x]
+    return sum
+
+
+
+print(sum(number1=1,number2=3))
+
+
+
+
+
+
+
+
+
+combination of option 2 and 3
+
+def choice(*number,**fruits):                                                                  output:(1, 2, 3) {'type': 'food', 'best': 'egg'}
+    print(number,fruits)
+choice(1,2,3,type="food",best="egg")
+
+
+
+note that:
+choice(1,2,3,type="food",best="egg")  is right
+choice(1,2,type="food",best="egg",3) is wrong
+
+
+
+

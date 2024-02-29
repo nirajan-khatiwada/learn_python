@@ -1,0 +1,46 @@
+How to handel error in python
+
+syntax:
+try:
+  code
+except:
+  the code that will run when error is encountered
+
+
+eg:1                                                    output:hello error
+try:
+    print("hello")
+    s
+except:
+    print("error")
+
+
+
+here error is there is s only due to wich it shift to print error as there is error in line 13
+procedure:
+there was no error in line 12 so execute line 12 and print hello
+there found error in line 13 so it shift to except condition
+in except section there was code print("error") so it print error
+
+
+
+
+eg 2:
+eg:1                                                    output:error
+try:
+    s
+    print("hello")
+except:
+    print("error")
+
+here error encountered in line 35 so it shift to except and execute code of except inside of line 36
+so output is error
+
+
+
+
+
+
+
+
+

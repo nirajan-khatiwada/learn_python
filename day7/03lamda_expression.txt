@@ -1,0 +1,43 @@
+map
+syntax:map(function, iterables)            =>return map
+def square(n):                        [1, 4, 9]     
+    return n**2
+
+x=[1,2,3]
+square=map(square,x)
+print(list(square))
+
+
+filter(only show those data which is returned)
+syntax:filter(function, iterables)                                [2]
+def remove_even(a):                   
+    if a%2==0:
+        return a
+    
+datas=[1,2,3]
+removed_datas=filter(remove_even,datas)
+print(list(removed_datas))
+
+
+
+
+
+lamda function(take only one argument)(only one line statement)
+lambda ARGUMENT_NAME:WHAT TO RETURN
+
+=>using lambda function
+square=lambda number:number**2
+print(square(4))      
+
+=>without using lambda function
+def square(number):
+    retun number**2
+print(square(4))
+
+
+using lambda in map
+
+datas=[1,2,3]
+removed_datas=map(lambda a:a**2,datas)
+print(list(removed_datas))
+

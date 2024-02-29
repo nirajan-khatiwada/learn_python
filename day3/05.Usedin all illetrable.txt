@@ -1,0 +1,72 @@
+syntax:string.join(iterable) =>string,list,tuples,set
+
+eg:                                                    output:John#Peter#Vicky
+myTuple = ("John", "Peter", "Vicky")
+
+x = "#".join(myTuple)
+
+print(x)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+max/min(used in list/tuples/set/string)
+
+min(variable_name)                                   =>display smallest iteam in the list/tuples/set
+max(variable_name)                                   =>display largest iteam
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+in(used in set,list,tuples,dictonary,string)
+value in variable_name                                      =>return True if value is in variable else return False
+
+
+eg:
+list_1=[1,2,3,4]                                             =>True
+print(1 in list_1)
+
+eg:(doesnt search value in nested loop,tuples)
+list_1=[[1,2],3,4]                                             =>False
+print(1 in list_1)
+
+
+same in case of set and tuples
+in  case convert into list using .keys and .values and use like list or if you want to check is there key or not then:
+my_dict={'name':'nirajan','grad+e':'bachlor'}                  =>True
+print('name' in my_dict)
+
+
+
+
+
+
+use of len (string,set,tuples,list)
+len(illetrable)                                         =>return length of the thing
+
+

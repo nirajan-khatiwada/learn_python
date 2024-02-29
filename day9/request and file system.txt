@@ -1,0 +1,35 @@
+data=
+json=
+params=
+
+resp=request.get(url,params={},header={},files={'file':open("filename","mode")})
+resp=request.get(url,data={},header={},files={'file':open("filename","mode")})
+resp=request.get(url,json={},header={},files={'file':open("filename","mode")})
+=>while using json the header file is content-type:appliaction/json 
+and the json dict is converted automatically
+=>while using data the header file is form data
+to send json file uisng data use use content-type:appliaction/json  in headers and we dump json
+
+resp.content  =>print all content
+resp.text =>print all the text
+resp.json =>convert the normal text into json
+
+
+import os
+os.path.join("c","home")
+
+import json
+string=json.dumps(dictanary)
+dictanary=json.loads(strings)
+
+
+fs=open("filename","r")
+print(fs.read())
+fs=open("filename","w")
+fs.write(data)
+=>for writing the data or reading data like text
+fs=open("filename","r")
+print(fs.read())
+fs=open("filename","w")
+fs.write(data)
+=> for writing the data or reading binary data like image

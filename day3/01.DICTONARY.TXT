@@ -1,0 +1,41 @@
+how to decleare dictionary
+variable={keys:values,keys:values}                                          eg:details={'name':'nirajan','class':'bachlo9r','favsubject':['maths',"science"]}
+note=>value can be string,number,list,dictionary itselfetc
+
+
+
+ACESSING dictionary
+variable['key']                                                              eg:print(details['favsubject'])
+                                                                            output=>['maths',"science"]
+
+
+add new key and values in dictonary
+variable['key']=value;                                                   eg:details['programming']='python'
+                                                                            print(details)
+                                                                            output:{'name': 'nirajan', 'class': 'bachlo9r', 'favsubject': ['maths', 'science'], 'programming': 'python'}
+
+change values of key
+variable['key']='new value'; 
+
+SOME BUILTIN FUNCTION
+to return all the keys of sictonary                                     syntax:variable.keys()
+to return all value of dictionary                                       syntax:variable.values()
+to return all the iteams of dictonary                                   syntax:variable.items()
+
+
+eg with output:
+details={'name':'nirajan','class':'bachlo9r','favsubject':['maths',"science"]}
+print(details.keys())
+print(details.values())
+print(details.items())
+
+
+output=>
+dict_keys(['name', 'class', 'favsubject'])
+dict_values(['nirajan', 'bachlo9r', ['maths', 'science']])
+dict_items([('name', 'nirajan'), ('class', 'bachlo9r'), ('favsubject', ['maths', 'science'])])
+
+
+
+
+

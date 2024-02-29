@@ -1,0 +1,164 @@
+#oop in python
+#https://www.youtube.com/watch?v=JeznW_7DlB0&t=2565s
+#only see eg here but see concpe in yt 
+#1)making class 
+#syntax:
+class ClassName:
+    
+#2)calling it
+#syntax:
+VaribleName=ClassName()
+
+#3)when class is called __init__ function is called eg:
+class Students:
+    def __init__(self,studentname):
+        print(studentname)
+s1=Students("nirajan")
+#output:nirajan
+
+
+#self uses                                                    
+class Students:                                                 
+    def __init__(self,studentname):                                                        
+        self.name=studentname                                                                                                                   
+s1=Students("nirajan")
+print(s1.name)                                                     
+
+#output="nirajan"
+#by doing thiswe can acess name in all function for example when self.variablename=data 
+#it is assigned globally  such that we can ascess in every function by using self.variablename
+
+class Students:
+    def __init__(self,studentname):
+        self.name=studentname
+    def studentName(self):
+        return self.name
+
+s1=Students("nirajan")
+print(s1.studentName())
+
+
+
+#some other basic example 
+class Students:
+    def __init__(self,studentname):
+        self.name=studentname
+    def studentName(self):
+        return self.name
+    def changeName(self,rename):
+        self.name=rename
+        return self.name
+
+s1=Students("nirajan")
+print(s1.changeName('nikesh'))
+
+#some other eg:
+class Students:
+    school="gsniketan"
+    def __init__(self,studentname):
+        self.name=studentname
+    def studentName(self):
+        return f'i am {self.name} and i read in {self.school}'
+    def changeName(self,rename):
+        self.name=rename
+    def renameSchool(self,schoolName):
+        self.school=schoolName
+s1=Students("nirajan")
+s1.changeName('nikesh')
+s1.renameSchool('hsm')
+print(s1.studentName())
+
+
+
+
+
+
+
+
+#Inheritance in python
+class Animal:
+    def __init__(self,AnimalNames,AnimalType):
+        self.name=AnimalNames
+        self.AnimalType=AnimalType
+    def AnimalName(self):
+        return f'i am {self.name}'
+    
+class Elephant(Animal):
+    pass
+
+
+e=Elephant("elephant",'wild')
+print(e.AnimalName())
+
+
+
+#here ELephant contain all The object of animal for eg the smiple form is:
+class Elephant():
+    def __init__(self,AnimalNames,AnimalType):
+        self.name=AnimalNames
+        self.AnimalType=AnimalType
+    def AnimalName(self):
+        return f'i am {self.name}'
+
+
+e=Elephant("elephant",'wild')
+print(e.AnimalName())
+
+
+
+#super() in python  here speaks function code has same code as speak like def speaks(self,name):
+                                                                           #print("bhau bhau")
+#syntax:super().functionnamae(patameter)
+class Animal():
+    def speak(self,name):
+        print("bhau bhau")
+
+class Dog(Animal):
+    def speaks(self,name):
+        super().speak(name)
+
+e=Dog()
+e.speaks('lol')
+
+
+
+
+
+
+
+class Animal:
+    def __init__(self,AnimalNames,AnimalType):
+        self.name=AnimalNames
+        self.AnimalType=AnimalType
+    def AnimalName(self):
+        return f'i am {self.name}'
+    def speak(self):
+        return f'i speak {self.speak}'
+
+class Elephant(Animal):
+    def __init__(self,AnimalNames,AnimalType,speak):
+        super().__init__(AnimalNames,AnimalType)
+        self.speak=speak
+
+e=Elephant('Elephant','wild','bhaubhau')
+print(Elephant.speak())
+
+
+
+
+
+#static method 
+class Math:
+    @staticmethod
+    def add(a,b):
+        return a+b
+    
+    def subtract(a,b):
+        return a-b
+
+print(Math.add(1,2))
+print(Math.subtract(2,1))
+
+#the merit of using @staticmegod is we dont need to initilize class like Math() and we dont need to  include self 
+
+

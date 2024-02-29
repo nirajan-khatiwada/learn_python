@@ -1,0 +1,5 @@
+To INstall extra PAckage
+pip install packageName                   =>to install the package
+
+How to use it:
+from library import functionName

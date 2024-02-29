@@ -1,0 +1,79 @@
+=>function is python
+
+=>declearing function in python
+def function_name(params1,params2,...):     =>params are the parameter we can use it our chouse .if there is one argument then we use only one parameter,if there is two arguments then we use two parameter
+        code inside it
+
+=>calling function  in python
+function_name(args1,args2)
+
+=>if we want to return value through the function then we have to use return keyword  
+return variable_name
+
+
+
+
+eg:
+def sum(a,b):                                                               input:1 
+    return a+b                                                                    3
+
+a=int(input("enter the 1st number"))                                         output:4
+b=int(input("enter  2nd number"))
+print(f'the sum of the number is={sum(a,b)}')
+
+
+eg:
+def even_numbers_check(a):                                                   note:if part is true it doesnt check elif and else
+    if a%2==0: 
+        return 'even'                                                         
+    else:
+        return 'odd'
+
+
+    
+list_1=list(range(1,101))
+for x in list_1:
+    print(f'{x} is {even_numbers_check(x)}')
+
+
+
+
+
+
+
+
+
+
+
+
+
+vvi notes:(dummy code)
+=>for if else
+if a==2:                                                                               always note that when if statement is not stisfy then only it will go for elif
+code                                                                            
+elif a==3:                                                                            if this is satisfy it will not go for another elif    if not satisfy it do for elif                                     
+code
+elif a==4:                                                                            
+code
+elif a==5:
+code 
+else:                                                                                   if noone is satisfy it will be excutated
+code
+
+
+
+
+
+function:
+def even_numbers_check(a):                                                            output is :1
+    return 1                                                                      =>its because when return statement is executed then the code below the function willnot be executed in python
+    print("2")
+    print("hi")
+    return 3
+
+
+print(even_numbers_check(2))
+
+
+
+

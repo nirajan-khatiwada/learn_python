@@ -1,0 +1,32 @@
+-=>some other things used in while/for loops
+1.break               =>break out from the current loop    
+
+eg:                            output:0 1
+x=0
+while x<5:
+    if x==2:
+        break
+    print(x)
+    x=x+1
+ 
+my_list=[1,2,3,4]                output:1,2
+for x in my_list:
+    if x==3:
+        break
+    print(x)
+
+
+2.continue          =>goes to the top of current enclosing loop
+x=0                             output:1 3 4 5
+while x<5:
+    x=x+1
+    if x==2:
+        continue
+    print(x)
+
+
+    when x==2 it goes top of loop
+
+
+
+same as while loop for for loop

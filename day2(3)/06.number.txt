@@ -1,0 +1,13 @@
+Function for number:
+
+to find absolute value:
+syntax:abs(variable)                                             input:-1                       
+eg:                                                      output: |-1|=1
+a=-1
+print(abs(a))
+
+round number
+syntax:round(variable)
+eg:                                                         output:4
+a=3.6
+print(round(a))

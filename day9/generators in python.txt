@@ -1,0 +1,38 @@
+https://www.youtube.com/watch?v=ixd-u3pmsUc
+
+
+Generators are a special type of function in Python that allow you to create an iterator that produces a sequence of
+values. Generators are useful for generating large sequences of values efficiently, without having to store the entire 
+sequence in memory.
+
+To create a generator, you simply define a function that uses the yield statement instead of the return statement. 
+The yield statement produces a value from the generator and then pauses the execution of the function. When the function 
+is called again, it resumes execution at the point where it left off.
+
+
+Here is a simple example of a generator:
+
+Python
+def generate_numbers(n):
+  for i in range(n):
+    yield i
+
+# Create a generator object.
+generator = generate_numbers(10)
+
+# Iterate over the generator object.
+for number in generator:
+  print(number)
+Use code with caution. Learn more
+Output:
+
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9s

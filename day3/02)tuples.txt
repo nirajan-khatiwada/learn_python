@@ -1,0 +1,21 @@
+=>it is similar to list but it is not mutable ie.immutable(they cant be changed)
+=>it can be concat by + operator
+
+=>decleration of tuple
+variable=(value1,value2,value3...)                                          eg:name=("ram","shyam","hari","gita")
+
+
+=>ACESSING tuples
+variable[index]
+
+=>BUILTIN function in tuples
+to find length of tuples                                     len(variable)
+return the no of repeation of values                         variable.count("value")                            clas=(1,2,3,4,5,6,78,4,2,2,3,21,1)
+                                                                                                                 print(clas.count(1))  =>2
+
+
+
+to return index of value                                     variable.index("value")  
+
+=>slicing and indexing same like string
+=>+ sign is used for concatenation

@@ -1,0 +1,5 @@
+if we want to use muntiple operator than we can use ()
+eg:
+>>> (2==2)and(3>4)
+False
+>>>

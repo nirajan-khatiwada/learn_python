@@ -1,0 +1,71 @@
+eg:a="hllo"
+    print(a.upper())
+    print(a)
+output:HLLOhllo
+ie. it doesnt change variable value to upper case as a value is same hllo in order to change its value we should de
+a=a.upper()
+print(a)
+ output=>HLLO
+
+
+but this are the inbuilt function that change value its self(doesnt return value)
+
+
+add an element in list              list.append("value")
+                                                                              print(a)
+                                                                               output=>[1, 2, 3, 4]  
+remove iteam from list  from last    list.pop()                                =>a.pop()
+                                                                               print(a)
+                                                                               output=>[1,2,3]
+
+remove iteam of random position      list.pop(index)                          a.pop(0)
+                                                                              print(a)
+                                                                              output=>[2,3]
+to sort an list                      list.sort()                                a=[1,3,4,1,3]
+                                                                                 a.sort()
+                                                                               print(a)  =>[1,1,3,3,4]
+                                                                               
+to reverse string                   list.reverse()
+
+to insert element in certion        list.insert(position,element)              a=[1,2]
+position                                                                    >>> a.insert(1,"inserted") 
+                                                                            >>> print(a)
+                                                                                [1, 'inserted', 2]
+to remove specific element        list.remove(element)                       a=[1,1,1]
+                                                                             a.remove(1)
+                                                                             print(a)               [1,1]
+
+
+note(in case of pop)
+variable=list.pop()                                                                print(variable)
+                                                                                =>display the item which is reduced
+                                                                                  print(list)
+                                                                                =>display list whose last element is removed
+
+
+
+set
+variable.add()                       =>add variable in set                               >>> a=set()
+                                                                                         >>> a.add("nirajan")
+                                                                                         >>> print(a)
+                                                                                           output=>  {'nirajan'}
+set.clear()                                     =>to remove all element of set
+
+
+tupless
+to add element in tupless                                    variable.append("value")
+
+to remove element from specific index                        varible.pop("index")
+                                                                                          
+
+
+
+list
+shuffle(list_variable_name)         =>to make the indixing random                        =>from random import shuffle                   =>[2, 4, 1, 3]
+                                                                                          my_list=[1,2,3,4]
+                                                                                          shuffle(my_list)
+                                                                                          print(my_list)
+                                      
+
+                                                                                   
+

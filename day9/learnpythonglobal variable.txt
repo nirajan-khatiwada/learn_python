@@ -1,0 +1,4 @@
+in function 
+in if
+in class
+global variable

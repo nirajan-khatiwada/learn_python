@@ -1,0 +1,2 @@
+                   some basic python command
+print()              eg:print("hello")         output:hello

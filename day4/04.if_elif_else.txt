@@ -1,0 +1,30 @@
+syntax:
+if condition:
+    code
+elif condition:
+    code
+else:
+    code
+
+
+eg:
+password="nirajan123"
+age=20
+if (password=="nirajan123" and (age==19)):
+    print("pass")
+elif (password=="nirajan123") and (age<=18):
+    print("minor")
+elif (password=="nirajan123") and (age>19):
+    print("greater age")    
+else:
+    print("fail")
+
+another eg:
+money=10000000;
+if (money>=1000000):
+    print("you are rich")
+elif money<=100000:
+    print("you are poor")
+
+
+    output=> you are rich

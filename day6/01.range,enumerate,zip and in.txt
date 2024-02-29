@@ -1,0 +1,91 @@
+function                               work                                         
+=>  range(start,end,step)                  to generate numbers       
+
+
+
+    its eg:
+    for x in range(0,10,2):                   =>explanation
+    print(x)                                range generate numbeer from [0,9] but not 10 and step is 2 only evenm number is taken for looping
+                                            code becomes:
+                                            for x in (0,2,4,6,8)
+                                            print(x)
+
+
+                                            output:0,2,4,6,8
+
+
+=>convert range to list
+variable_name=list(range(start,end,step))            =>convert range into list
+
+eg:
+my_list=list(range(1,10))                            =>[1, 2, 3, 4, 5, 6, 7, 8, 9]
+print(my_list)                                 
+
+
+
+
+
+
+
+
+
+
+
+=>enumerate(used in list,set and tuples,string)
+  enumerate(variable_name)                               =>return object containing nested tupples of index position and its value
+
+eg:
+my_name='nirajan'                                       =>enumerate  return the object containing nested tuples of index position and my_data
+print(list(enumerate(my_name)))                            and its converted into list
+                                                       =>output:[(0, 'n'), (1, 'i'), (2, 'r'), (3, 'a'), (4, 'j'), (5, 'a'), (6, 'n')]
+
+my_list=['nirajan','rame','shayme']                     =>output:
+for index,data in enumerate(my_list):                      The 1 Boy is nirajan
+   print(f'The {index+1} Boy is {data}')                   The 2 Boy is rame
+                                                          The 3 Boy is shayme
+                                                    
+list1={91,2,30}                                         =>output
+print(list(enumerate(list1)))                             set put the data in sequencial order such that data is now {2,30,91}
+                                                           [(0, 2), (1, 91), (2, 30)]
+
+                                                       
+
+
+
+
+
+
+
+zip(can be used in tuples/set/list/STRING)
+zip(list1,list2,....)                                        =>return combined list objected containing nested tuples
+zip()
+
+eg:
+list1=[1,2,3]                                                 =>[(1, 4), (2, 5), (3, 6)]
+list2=[4,5,6]
+print(list(zip(list1,list2)))
+
+eg2:(loop there is unbalanced item in list1 and list 2 so it will comine the list 1 and list only upso shoetest length)
+list1=[1,2]                                                =>[(1, 3), (2, 4)]
+list2=[3,4,5]
+print(list(zip(list1,list2)))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

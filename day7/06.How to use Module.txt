@@ -1,0 +1,14 @@
+#how to use module in python(SYNTAX)
+
+from file name import functionName                                        =>used to import only  function whose name is functionName from other file
+functionName()
+            
+
+
+eg:
+fileName:function.py                                                    =>filename:main.py
+def printName(name):                                                       from function import printName
+    print(f'my name is {name}')                                            printName('nirajan')                                
+
+
+python main.py           output:my name is nirajan                    

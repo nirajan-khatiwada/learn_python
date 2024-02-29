@@ -1,0 +1,214 @@
+#for creating package first create the directry which contain python file as in practise
+#the create __init__.py
+# init file is used just to  indicate that a directory is a package. This is necessary in order to import modules from the directory
+#another use is when the package is imported code of __init__.py is executed
+#and make .py file of other
+
+#for creating subpackage first create the directry inside mainpackage directry
+#and make __init__.py and write the code whill will be executed when package is imported
+
+
+#how to use package in python
+from Package_folder_Name import FileNAme                    =>all code of FileName.py will be in FileName
+FileNAme.functionname_inside_thatFile()
+
+#to usesubpackage
+from Package_Folder_NAme.SubpackeFolder_Name import FileName
+FileName.functionName_insideThatFile()
+
+#import function from other file
+from fileName import FunctionNAme                         =>used to import FunctionNAme in this file Note:only the function having name functionNAme and code outside functionname will be imported
+FunctionNAme()
+
+#anotherWay
+import FileNAme
+FileNAme.functionName()
+
+
+#another way
+from foldername.foldername.foldername import filename
+from foldername.foldername..... .filename import function
+
+
+
+
+
+#note 
+if we import filename then use FileName.function()           
+if we import functionname use FunctionNAme()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+look some example:
+main.py                                               importer.py
+def hello():                                    from main import hello
+    print("hi")                                 hello()
+def greet():
+    print("welcome")                                
+print("hello")
+hello()
+
+output:
+hello
+hi
+hi
+
+
+As we import function hello() from main.py in importer.py so hello() is imported in importer.py as well code outside function 
+is also imported like print("hello") and hello()
+
+
+so the final code look like:
+importer.py
+def hello():
+     print("hi")
+print("hello")
+hello()
+hello()
+
+if we call greet() in importer.py it will be error as its not imported in importer.py only hello function is imported
+
+
+
+
+
+
+
+
+
+
+2nd example:
+look some example:
+main.py                                               importer.py
+def hello():                                    import main
+    print("hi")                                 main.hello()
+def greet():                                    main.greet()
+    print("welcome")                                
+print("hello")
+hello()
+
+output:
+hello
+hi
+hi
+welcome
+
+
+as we import whloe code from main.py so our code look like
+importer.py
+def hello():                                    
+    print("hi")                                 
+def greet():
+    print("welcome")                                
+print("hello")
+hello()
+main.hello()
+main.greet()
+
+
+
+
+
+
+
+
+
+when to use __name__="__main__"
+The __name__ == "__main__" construct is used in Python to determine if the Python script is being run as the main program
+ or if it is being imported as a module into another script.In your examples, if you want a certain block of code to only
+ run when the script is executed directly (not when imported as a module), you can use the __name__ == "__main__" 
+condition.Here's how you can modify your examples:
+
+
+
+  1st example:
+   main.py                           importer.py
+def hello():                          from main import hello
+    print("hi")                            hello()
+
+def greet():
+    print("welcome")
+
+if __name__ == "__main__":
+    print("hello")
+    hello()
+
+
+the code of importer.py look like when we use __name__=="__main__"
+def hello():                         
+    print("hi")                            
+hello()
+
+
+In this modified example, the print("hello") and hello() will only 
+be executed if the script is run directly, not when it's imported as a module.
+
+output:
+python importer.py
+hi
+python main.py
+hello
+hi
+
+
+
+
+
+
+
+
+For 2nd eg:
+# main.py                                importer.py
+def hello():                             import main
+    print("hi")                           main.hello()
+def greet():                              main.greet()
+    print("welcome")
+
+if __name__ == "__main__":
+    print("hello")
+    hello()
+
+Similarly, in this modified example, the print("hello") and hello() will only be executed if the script is run directly.
+By using if __name__ == "__main__":, you can control the execution of code based on whether the script is the main 
+program or if it's being imported as a module
+The importer will look like:
+def hello():                             
+    print("hi")                           
+def greet():                              
+    print("welcome")
+main.hello()
+main.greet()
+
+output:
+python main.py
+hello
+hi
+
+python importer.py
+hi
+welcome
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,7 @@
+note:
+a=true                 =>error
+a=True                 =>t should be capital
+same for false
+
+to assign no value
+variable=None;

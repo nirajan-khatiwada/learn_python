@@ -1,0 +1,23 @@
+=>List comprehensiron are unique way to create list with python
+
+SYNTAX:list_name=[variable_name1 for variable_name1 in set/tuples/list/string/range/illetrable things ]
+       list_name=[variable_name1 for variable_name1 in set/tuples/list/string/range/illetrable things  if CONDITION]
+
+EG:
+using foor loop                        
+my_string='nirajan'                     
+my_list=[]
+for x in my_string:
+    my_list.append(x)
+print(my_list)
+
+using list comprehensiron
+my_string='nirajan'
+my_list=[x for x in my_string]
+print(my_list)
+
+
+make a list which is square of another list
+list_1=[1,2,3,4]
+list_2=[x**2 for x in list_1]
+print(list_2)
