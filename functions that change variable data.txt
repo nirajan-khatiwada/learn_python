@@ -56,7 +56,11 @@ tupless
 to add element in tupless                                    variable.append("value")
 
 to remove element from specific index                        varible.pop("index")
-                                                                                          
+
+
+
+time
+time.sleep(n)                                =>pause the program for n seconds
 
 
 
