@@ -1,5 +1,30 @@
 uuid                       =>to generate random id
-
 from uuid import uuid4     =>2a43ad7d-a52a-4ba3-9080-c35fe2ce76c0
 print(uuid4())
+
+
+
+
+
+Raising custom error
+
+raise ValueError          =>to raise value error 
+
+
+
+use cases:                ' 
+a=9                                                             =>traceback (most recent call last):
+if(a==9):                                                         File "C:\Users\niraj\Downloads\practise\main.py", line 3, in <module>
+   raise ValueError("Value shouldnot be 9")                        raise ValueError("Value shouldnot be 9")
+                                                                    ValueError: Value shouldnot be 9
+
+
+
+
+try:                                                              =>Error
+    a=9
+    if(a==9):
+        raise ValueError("Value shouldnot be 9")
+except:
+    print("Error")
 
