@@ -87,3 +87,5 @@ Learn that multi inheritance in oop
 we can inheritant multiple class in oop
 class Human(Man,SocialAnimal):
 
+
+
