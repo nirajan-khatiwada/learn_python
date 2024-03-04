@@ -6,6 +6,33 @@ print(uuid4())
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Raising custom error
 
 raise ValueError          =>to raise value error 
@@ -30,4 +57,33 @@ except:
 
 is vs ==
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Learn that multi inheritance in oop
+we can inheritant multiple class in oop
+class Human(Man,SocialAnimal):
+
