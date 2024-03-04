@@ -88,7 +88,17 @@ we can inheritant multiple class in oop
 class Human(Man,SocialAnimal):
 
 
+class Nirajan:
+    def get_name(self,name):
+        return name
+    def print_name(self,name):
+        return self.get_name(name)
 
+
+nirajan=Nirajan()
+print(nirajan.print_name("nirajan"))
+output=>nirajan
+ascessing function which is inside class from function inside the class
 
 
 
