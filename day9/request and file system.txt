@@ -18,6 +18,7 @@ resp.json =>convert the normal text into json
 import os
 os.path.join("c","home")
 
+
 import json
 string=json.dumps(dictanary)
 dictanary=json.loads(strings)
@@ -27,9 +28,13 @@ fs=open("filename","r")
 print(fs.read())
 fs=open("filename","w")
 fs.write(data)
-=>for writing the data or reading data like text
-fs=open("filename","r")
-print(fs.read())
-fs=open("filename","w")
+fs=open("filename","a")
 fs.write(data)
-=> for writing the data or reading binary data like image
+=>for writing the data or reading data or appending data like text
+fs=open("filename","rb")
+print(fs.read())
+fs=open("filename","wb")
+fs.write(data)
+fs=open("filename","ab")
+fs.write(data)
+=> for writing the data or reading or appending data binary data like image
