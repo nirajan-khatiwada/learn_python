@@ -143,3 +143,41 @@ nirajan
 
 
 
+
+
+
+
+
+
+
+Time
+
+=>Python time.time() Function
+                  In Python, the time() function returns the number of seconds passed since epoch (the point where time begins).
+                  
+                  For the Unix system, January 1, 1970, 00:00:00 at UTC is epoch.
+                  
+                  Let's see an example,
+                  
+                  # import the time module
+                  import time
+                  
+                  # get the current time in seconds since the epoch
+                  seconds = time.time()
+                  
+                  print("Seconds since epoch =", seconds)	
+                  
+                  # Output: Seconds since epoch = 1672214933.6804628
+
+Python time.sleep() Function
+                  The sleep() function suspends (delays) execution of the current thread for the given number of seconds.
+                  
+                  import time
+                  
+                  print("Printed immediately.")
+                  time.sleep(2.4)
+                  print("Printed after 2.4 seconds.")
+                                    
+                                    
+                                    
+                                    
