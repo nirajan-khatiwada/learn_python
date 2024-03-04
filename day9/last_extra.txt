@@ -29,3 +29,5 @@ except:
     print("Error")
 
 is vs ==
+
+Learn that multi inheritance in oop
