@@ -89,3 +89,47 @@ class Human(Man,SocialAnimal):
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Dicnatory Unpacking in python
+=>dictionary unpacking is one of the important concept.
+
+for example:
+a={"name":"nirajan","class":12,"fav_sub":"Maths"}
+**a  =>this is dictionary unpacking that is equal to name="nirajan","class"=12,fab_sub="Maths"
+
+
+One important Method in Dictionary
+syntax:variable.pop("keys to remove")              =>return values of that keys and remove that keys and value in dictionary
+eg:
+a={"name":"nirajan","class":12,"fav_sub":"Maths"}
+print(a.pop("name"))
+print(a)
+
+output:
+nirajan
+{'class': 12, 'fav_sub': 'Maths'}
+
+
+
+
