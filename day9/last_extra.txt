@@ -1,4 +1,4 @@
-uuid             =>to generate random id
+uuid                       =>to generate random id
 
 from uuid import uuid4     =>2a43ad7d-a52a-4ba3-9080-c35fe2ce76c0
 print(uuid4())
