@@ -177,6 +177,89 @@ Python time.sleep() Function
                   print("Printed immediately.")
                   time.sleep(2.4)
                   print("Printed after 2.4 seconds.")
+
+
+
+
+
+
+
+
+
+
+
+
+timedate       =>to do date and time operation
+               =>import datetime
+
+
+
+
+
+
+
+
+
+
+
+=>datetime.datetime.now()          =>return today date with time for example
+
+
+code example:
+import datetime
+x=datetime.datetime.now()
+print(x)
+
+output:
+2024-03-28 12:17:20.118952
+
+another:
+import datetime
+x=datetime.datetime.now()
+print(x.year,x.month,x.day,x.second)
+print("\n")
+print(x)
+
+output:2024 3 28 14
+
+
+
+
+
+
+
+
+
+
+
+to make datetime object
+datetime.datetime(2020,10,20)          =>make date time object of 2020 10 20
+
+example:
+import datetime
+x=datetime.datetime(2020,10,20) 
+print(x.year,x.month,x.day,x.second)
+print("\n")
+print(x)
+
+
+output:
+2020 10 20 0
+
+
+2020-10-20 00:00:00
+
+
+
+
+
+
+
+
+
+
+
+
                                     
                                     
                                     
