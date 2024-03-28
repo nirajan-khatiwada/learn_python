@@ -216,11 +216,17 @@ output:
 another:
 import datetime
 x=datetime.datetime.now()
-print(x.year,x.month,x.day,x.second)
+print(x.year,x.month,x.day,x.hour,x.minute,x.second)
+print(x.date())
 print("\n")
 print(x)
 
-output:2024 3 28 14
+output:
+2024 3 28 12 41 23
+2024-03-28
+
+
+2024-03-28 12:41:23.830177
 
 
 
