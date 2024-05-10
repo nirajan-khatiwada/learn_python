@@ -1,7 +1,9 @@
 import function from library
-
 =>syntax
 from library import function name
+
+
+learn about 'as'
 
 =>To Suffle list
 from random import shuffle                   =>[2, 4, 1, 3]                 =>random position of item and doesnt return values
