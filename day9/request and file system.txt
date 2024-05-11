@@ -17,11 +17,14 @@ resp.json =>convert the normal text into json
 
 import os
 os.path.join("c","home")
+os.rename("old","new")
 
 
 import json
 string=json.dumps(dictanary)
 dictanary=json.loads(strings)
+
+
 
 
 fs=open("filename","r")
