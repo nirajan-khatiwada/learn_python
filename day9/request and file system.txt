@@ -3,8 +3,8 @@ json=
 params=
 
 resp=request.get(url,params={},header={},files={'file':open("filename","mode")})
-resp=request.get(url,data={},header={},files={'file':open("filename","mode")})
-resp=request.get(url,json={},header={},files={'file':open("filename","mode")})
+resp=request.post(url,data={},header={},files={'file':open("filename","mode")})
+resp=request.post(url,json={},header={},files={'file':open("filename","mode")})
 =>while using json the header file is content-type:appliaction/json 
 and the json dict is converted automatically
 =>while using data the header file is form data
