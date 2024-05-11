@@ -1,10 +1,13 @@
 data=
 json=
 params=
+files=
+cookies=
 
 resp=request.get(url,params={},header={},files={'file':open("filename","mode")})
 resp=request.post(url,data={},header={},files={'file':open("filename","mode")})
 resp=request.post(url,json={},header={},files={'file':open("filename","mode")})
+resp=request.post(url,json={},header={},files={'file':open("filename","mode")},cookies={})
 =>while using json the header file is content-type:appliaction/json 
 and the json dict is converted automatically
 =>while using data the header file is form data
@@ -13,6 +16,7 @@ to send json file uisng data use use content-type:appliaction/json  in headers a
 resp.content  =>print all content
 resp.text =>print all the text
 resp.json =>convert the normal text into json
+resp.cookies =>to get cookie
 
 
 import os
