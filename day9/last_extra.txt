@@ -266,6 +266,45 @@ output:
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+asyncio
+import asyncio
+import requests
+async def download(url,save):
+    fs=open(save,"wb")
+    data=requests.get(url)
+
+    fs.write(data.content)
+    fs.close()
+
+async def main():
+    output=await asyncio.gather(download("https://images.pexels.com/photos/23221538/pexels-photo-23221538/free-photo-of-a-white-flower-with-green-leaves-in-the-dark.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1","lol.jpg"),download("https://images.pexels.com/photos/23221538/pexels-photo-23221538/free-photo-of-a-white-flower-with-green-leaves-in-the-dark.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1","2.jpg"))
+    print(output)
+    
+
+asyncio.run(main())
+
+print("sakkity")
+
                                     
                                     
                                     
