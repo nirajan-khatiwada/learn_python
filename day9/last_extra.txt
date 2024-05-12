@@ -305,6 +305,20 @@ asyncio.run(main())
 
 print("sakkity")
 
+
+
+
+
+
+
+
+
+single line and multiline comment 
+
+#commet =>for single line comment
+"""comment=>for multi line comment
+comment"""
+
                                     
                                     
                                     
