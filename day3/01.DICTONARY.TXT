@@ -21,10 +21,12 @@ SOME BUILTIN FUNCTION
 to return all the keys of sictonary                                     syntax:variable.keys()
 to return all value of dictionary                                       syntax:variable.values()
 to return all the iteams of dictonary                                   syntax:variable.items()
+to return the valur of key                                              syntax:variable.get("key")
 
 
 eg with output:
 details={'name':'nirajan','class':'bachlo9r','favsubject':['maths',"science"]}
+print(variable.get("key"))
 print(details.keys())
 print(details.values())
 print(details.items())
