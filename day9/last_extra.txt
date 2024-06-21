@@ -129,6 +129,18 @@ a={"name":"nirajan","class":12,"fav_sub":"Maths"}
 **a  =>this is dictionary unpacking that is equal to name="nirajan","class"=12,fab_sub="Maths"
 
 
+List Unpacking in python
+=>list unpacking is one of the important concept.
+
+for example:
+a=["nirajan","khatiwada"]
+*a  =>this is List unpacking that is equal to "nirajan","khatiwada"
+
+
+
+
+
+
 One important Method in Dictionary
 syntax:variable.pop("keys to remove")              =>return values of that keys and remove that keys and value in dictionary
 eg:
@@ -326,6 +338,7 @@ raw string in python
 multithreading
 multiprocessingin python
 multiprocessinginpython
+sorted function
 
                                     
                                     
