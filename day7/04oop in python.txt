@@ -162,3 +162,12 @@ print(Math.subtract(2,1))
 #the merit of using @staticmegod is we dont need to initilize class like Math() and we dont need to  include self 
 
 
+
+
+
+#classmethod decorator
+#property decorator
+#private in oop
+#self.functioname =>call inside function of class
+
+
