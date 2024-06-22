@@ -335,9 +335,6 @@ comment"""
 
 
 raw string in python
-multithreading
-multiprocessingin python
-multiprocessinginpython
 sorted function
 
                                     
