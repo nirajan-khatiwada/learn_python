@@ -5,10 +5,59 @@ ascessing element in set:
 it can be ascessed using for loop 
 
 some of the builtin function of set are
-len(variable)                                   =>to count no of variable in set
-set(list_variable)                             =>convert set into ;list
-set.add(value)                                  =>add set into variable
-set.clear()                                     =>to remove all element of set
+add(): Adds an element to the set.
+
+python
+Copy code
+my_set = {1, 2, 3}
+my_set.add(4)
+print(my_set)  # Output: {1, 2, 3, 4}
+discard(): Removes a specified element from the set if it is present. Does not raise an error if the element is not found.
+
+python
+Copy code
+my_set = {1, 2, 3}
+my_set.discard(2)
+print(my_set)  # Output: {1, 3}
+clear(): Removes all elements from the set.
+
+python
+Copy code
+my_set = {1, 2, 3}
+my_set.clear()
+print(my_set)  # Output: set()
+union(): Returns a new set with elements from the set and all others.
+
+python
+Copy code
+set1 = {1, 2, 3}
+set2 = {3, 4, 5}
+result = set1.union(set2)
+print(result)  # Output: {1, 2, 3, 4, 5}
+intersection(): Returns a new set with elements common to the set and all others.
+
+python
+Copy code
+set1 = {1, 2, 3}
+set2 = {2, 3, 4}
+result = set1.intersection(set2)
+print(result)  # Output: {2, 3}
+difference(): Returns a new set with elements in the set that are not in the others.
+
+python
+Copy code
+set1 = {1, 2, 3}
+set2 = {2, 3, 4}
+result = set1.difference(set2)
+print(result)  # Output: {1}
+symmetric_difference(): Returns a new set with elements in either the set or the others but not both.
+
+python
+Copy code
+set1 = {1, 2, 3}
+set2 = {2, 3, 4}
+result = set1.symmetric_difference(set2)
+print(result)  # Output: {1, 4}
 
 
 all in one examples
