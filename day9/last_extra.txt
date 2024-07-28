@@ -141,22 +141,6 @@ a=["nirajan","khatiwada"]
 
 
 
-One important Method in Dictionary
-syntax:variable.pop("keys to remove")              =>return values of that keys and remove that keys and value in dictionary
-eg:
-a={"name":"nirajan","class":12,"fav_sub":"Maths"}
-print(a.pop("name"))
-print(a)
-
-output:
-nirajan
-{'class': 12, 'fav_sub': 'Maths'}
-
-
-
-
-
-
 
 
 
