@@ -24,6 +24,24 @@ to return all the iteams of dictonary                                   syntax:v
 to return the valur of key                                              syntax:variable.get("key")
 
 
+
+
+One important Method in Dictionary
+syntax:variable.pop("keys to remove")              =>return values of that keys and remove that keys and value in dictionary
+eg:
+a={"name":"nirajan","class":12,"fav_sub":"Maths"}
+print(a.pop("name"))
+print(a)
+output:
+nirajan
+{'class': 12, 'fav_sub': 'Maths'}
+
+
+also:
+syndax:variable.get("key")
+
+
+
 eg with output:
 details={'name':'nirajan','class':'bachlo9r','favsubject':['maths',"science"]}
 print(variable.get("key"))
