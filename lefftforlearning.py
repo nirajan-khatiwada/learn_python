@@ -1,3 +1,2 @@
-Threading
 Multiprocesinig 
-Asyncio
+
