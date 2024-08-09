@@ -57,5 +57,5 @@ dict_items([('name', 'nirajan'), ('class', 'bachlo9r'), ('favsubject', ['maths',
 
 
 
-
+Note=if you try to access a key that does not exist, you will also encounter an error. For example, if you have a dictionary d = {'a': 1, 'b': 2} and you try to access d['c'], it will raise a KeyError because the key 'c' is not present in the dictionary.
 
