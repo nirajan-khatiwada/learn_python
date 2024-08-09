@@ -75,6 +75,7 @@ variable=list.pop()                                                             
 
 
 
+Notes:When you attempt to access data at an index that is out of range, an error will occur. For example, consider the list a = [1, 2, 3, 4, 5]. If you try to access an element at index 5 using a[5], it will result in an IndexError because the valid indices for this list are 0 through 4.
 
 
 
