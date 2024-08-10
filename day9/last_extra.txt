@@ -345,5 +345,92 @@ Any non-empty string (e.g., "hello", " ")
 Any object (e.g., {}, [])
 function (e.g., function() {})
 BigInt values other than 0n (e.g., 1n)
-                                    
-                                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1. Accessing a Global Variable in a Function
+Global Variable: A variable declared outside of all functions, available to any part of your code.
+Function: A block of code that performs a specific task and can use variables.
+If you want to use a global variable inside a function, you can do it directly. However, if you want to modify the global variable inside the function, you need to use the global keyword.
+
+Example:
+
+python
+Copy code
+x = 10  # Global variable
+
+def my_function():
+    global x  # Declare that you want to use the global 'x'
+    x = 20  # Now modify the global 'x'
+    print(x)
+
+my_function()  # This will print 20
+print(x)  # This will also print 20 because 'x' was modified globally
+Without the global keyword, any assignment to x inside the function would create a local variable x that doesn't affect the global x.
+
+2. Raising an Error
+Raising an Error: This is a way to stop your code and show that something went wrong.
+When you know something is wrong and want to signal this to the user or developer, you can raise an error. This is done using the raise keyword followed by the type of error you want to raise.
+
+Example:
+
+python
+Copy code
+def check_age(age):
+    if age < 0:
+        raise ValueError("Age cannot be negative!")  # This will stop the function and show an error
+    else:
+        print("Age is valid.")
+
+check_age(-1)  # This will raise a ValueError with the message "Age cannot be negative!"
+You can raise different types of errors like ValueError, TypeError, IndexError, etc., depending on what went wrong.
+
+3. Preventing Errors with .get() in Dictionaries
+When you try to access an element in a list using an index that doesn't exist, or a key in a dictionary that isn't there, Python will raise an error.
+
+List Example:
+
+python
+Copy code
+my_list = [1, 2, 3]
+print(my_list[5])  # This will raise an IndexError because index 5 doesn't exist
+Dictionary Example:
+
+python
+Copy code
+my_dict = {"name": "nirajan"}
+print(my_dict["age"])  # This will raise a KeyError because "age" key doesn't exist
+To prevent the error when accessing a dictionary, you can use the .get() method. This method returns None (or a default value you specify) if the key is not found, instead of raising an error.
+
+Example:
+
+python
+Copy code
+my_dict = {"name": "nirajan"}
+print(my_dict.get("age"))  # This will return None instead of raising an error
+print(my_dict.get("age", "Not Found"))  # This will return "Not Found" if "age" key doesn't exist
+Using .get() is a safer way to access dictionary values when you're not sure if the key exists.
