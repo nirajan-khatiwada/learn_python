@@ -70,6 +70,9 @@ variable.count(string)                                      ==>to count no of st
                                                             eg:a="hell" print(a.count('l'))  output:2
 variable.find(string)                                     ==>to find index of string
 
+variable.startswith(string)                                ==>to find if variable starts with that string
+
+variable.endswith(string)                                  =>to find if the variable ends with that string
 
 
 
