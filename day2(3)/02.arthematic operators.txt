@@ -4,6 +4,7 @@ mul *
 divide /
 modulo/mod %
 power **               eg:2**3 => 2^3
+floordivision //       eg:7//2 =>3
 brackt        ()       eg:2*(3+4) =>2*7
 
 
