@@ -74,6 +74,11 @@ variable.startswith(string)                                ==>to find if variabl
 
 variable.endswith(string)                                  =>to find if the variable ends with that string
 
+variable.strip()                                          =>to remove blank space of both side like '  My name is nirajan khatiwada   '  ==>'My name is nirajan khatiwada'
+
+variable.lstrip()                                         =>to remove blank space of left side only
+
+variable.rstrip()                                         =>to remove blank space of right side only            
 
 
 
